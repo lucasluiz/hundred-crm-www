@@ -15,6 +15,14 @@ http {
 
 		location / {
 			proxy_pass http://hundred-crm-landing.herokuapp.com/;
+        }
+        
+        location /sites {
+			proxy_pass https://hundred-crm-site.herokuapp.com/;
+        }
+        
+        location /blog {
+			proxy_pass https://hundred-crm-blog.herokuapp.com/;
 		}
 	}
 }

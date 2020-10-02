@@ -14,7 +14,7 @@ http {
 		listen <%= ENV["PORT"] %>;
 
 		location / {
-			proxy_pass http://hundred-crm-landing.herokuapp.com/;
+			proxy_pass http://hundred-crm.herokuapp.com/;
         }
         
         location /sites {
